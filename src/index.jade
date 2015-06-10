@@ -6,13 +6,36 @@ head
 	link(rel="stylesheet", href="dist/style.css")
 body
 
-	section
-		aside Sidebar
-		.gallery
-			img(src="https://placekitten.com/g/800/600")
-			img(src="https://placekitten.com/g/800/600")
-			img(src="https://placekitten.com/g/800/600")
-			img(src="https://placekitten.com/g/800/600")
+	.wrap
+		aside
+			a.logo(href="/"): img(src="img/kitty-logo.png", alt="kitty logo")
+			nav
+				a(href="/") Home
+				a(href="#about") About
+				a(href="#services") Services
+				a(href="#") Contact
+
+		.posts
+			.post
+				img(src="img/cat.jpg", alt="meow")
+				article
+					header
+						h2 Hello kitty
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis quos natus, nulla dolore adipisci quisquam, delectus beatae dolores doloremque voluptates amet nesciunt ipsam ad ullam maiores labore in iusto similique.
+			
+			.post
+				img(src="img/cat.jpg", alt="meow")
+				article
+					header
+						h2 Hello kitty
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis quos natus, nulla dolore adipisci quisquam, delectus beatae dolores doloremque voluptates amet nesciunt ipsam ad ullam maiores labore in iusto similique.
+
+			.post
+				img(src="img/cat.jpg", alt="meow")
+				article
+					header
+						h2 Hello kitty
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis quos natus, nulla dolore adipisci quisquam, delectus beatae dolores doloremque voluptates amet nesciunt ipsam ad ullam maiores labore in iusto similique.
 	
 	script(src="lib/angular/angular.min.js")
 	script(src="dist/script.js")
