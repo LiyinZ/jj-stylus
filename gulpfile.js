@@ -28,8 +28,8 @@ gulp.task('serve', ['stylus', 'jade'], function() {
     server: "./"
   });
 
-  gulp.watch('src/*.styl', ['stylus']);
-  gulp.watch('src/index.jade', ['jade']);
+  gulp.watch(['src/style.styl', 'src/styles/*.styl'], ['stylus']);
+  gulp.watch(['src/index.jade', 'src/layouts/*.jade'], ['jade']);
   gulp.watch('src/script.js', ['script']);
   gulp.watch('./index.html').on('change', browserSync.reload);
   gulp.watch('./dist/style.css').on('change', browserSync.reload);
