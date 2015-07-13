@@ -29,7 +29,7 @@ gulp.task('script', function() {
     .pipe(browserSync.stream());
 });
 
-gulp.task('serve', ['stylus', 'jade'], function() {
+gulp.task('serve', ['stylus', 'jade', 'script'], function() {
   browserSync.init({
     server: "./"
   });
